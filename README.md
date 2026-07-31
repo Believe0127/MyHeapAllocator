@@ -3,7 +3,9 @@
 
 ## Features
 ・16 byte alignment guaranteed
+
 ・Automatic block splitting & coalescing
+
 ・Zero dependencies (built on Windows "VirtualAlloc")
 
 ## Usage
