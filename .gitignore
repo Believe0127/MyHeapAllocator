@@ -1,0 +1,5 @@
+.zed/
+build/
+*.exe
+*.pdb
+.clangd

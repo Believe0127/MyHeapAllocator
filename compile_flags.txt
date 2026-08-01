@@ -1,0 +1,5 @@
+--driver-mode=cl
+/O2
+/std:c++20
+/W4
+/Iinclude
