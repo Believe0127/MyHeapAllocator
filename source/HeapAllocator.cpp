@@ -131,7 +131,8 @@ void HeapAllocator::print_data() const noexcept
             for (size_t i = 0, end = b->block_size >> 3; i < end; ++i) {
                 printf("%016llX\n", reinterpret_cast<u64 *>(b)[i]);
 
-                // little endian format (これにする場合ループ条件を i < b->block_size にする必要あり)
+                // Little-endian format
+                // この形式にする場合、ループ条件を i < b->block_size に変更する必要がある
                 // printf(
                 //     "%02X%s"
                 //    ,reinterpret_cast<u8 *>(b)[i]
