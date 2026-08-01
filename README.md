@@ -18,8 +18,11 @@ int main() {
     Heap heap(0x1000);
     HeapAllocator allocator(heap);
 
-    auto* p = allocator.allocate(32);
-    allocator.free(p);
+    auto* p1 = allocator.allocate<int>();
+    void* p2 = allocator.allocate(32);
+
+    allocator.free(p1);
+    allocator.free(p2);
 
     return 0;
 }
