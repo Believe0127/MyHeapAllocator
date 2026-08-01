@@ -6,6 +6,11 @@ class HeapAllocator {
 public:
     explicit HeapAllocator(Heap& heap) noexcept;
 
+    template <class T>
+    auto allocate() noexcept {
+        return reinterpret_cast<T *>(allocate(sizeof(T)));
+    }
+
     void* allocate(size_t size) noexcept;
     void  free(void* ptr)       noexcept;
 
