@@ -1,12 +1,15 @@
 # MyHeapAllocator
-16 byte aligned custom heap allocator for Windows.
+
+A 16-byte aligned custom heap allocator for Windows.
 
 ## Features
-- 16 byte alignment guaranteed
+
+- Guaranteed 16-byte alignment
 - Automatic block splitting & coalescing
-- Zero dependencies (built on Windows API's VirtualAlloc function)
+- Zero dependencies (built on the Windows API's "VirtualAlloc" function)
 
 ## Usage
+
 ```cpp
 #include "Heap.hpp"
 #include "HeapAllocator.hpp"
