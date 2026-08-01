@@ -4,7 +4,7 @@
 ## Features
 - 16 byte alignment guaranteed
 - Automatic block splitting & coalescing
-- Zero dependencies (built on Windows "VirtualAlloc")
+- Zero dependencies (built on Windows API's VirtualAlloc function)
 
 ## Usage
 ```cpp
