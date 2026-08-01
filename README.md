@@ -2,11 +2,9 @@
 16 byte aligned custom heap allocator for Windows.
 
 ## Features
-・16 byte alignment guaranteed
-
-・Automatic block splitting & coalescing
-
-・Zero dependencies (built on Windows "VirtualAlloc")
+- 16 byte alignment guaranteed
+- Automatic block splitting & coalescing
+- Zero dependencies (built on Windows "VirtualAlloc")
 
 ## Usage
 ```cpp
